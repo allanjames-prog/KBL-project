@@ -3,64 +3,56 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>KGL Ltd</title>
+
+    <!-- Link for Dancing Script fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Link for Roboto Slab font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     
+    <!-- Link to the css files -->
     <link rel="stylesheet" href="../css-styles/bootstrap-5.3.3-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../css-styles/styles.css">
+    <link rel="stylesheet" href="../css-styles/login-styles.css">
 
 
   </head>
   <body>
+
+    <!-- Container for my home page / login page -->
     <div class="container"> 
       <div class="row"> 
-        <div class="col-6">
-          <h1><strong>Welcome to Karibu Groceries</strong></h1>
-          <h4>Freshness Delivered to Your Doorstep!</h4>
-          <p>At Karibu Groceries, we bring you the freshest fruits, vegetables, dairy, and pantry essentials—all at unbeatable prices. We believe that quality food leads to a healthier lifestyle, which is why we source directly from trusted farmers and suppliers to ensure every bite is fresh and nutritious.</p>
+        <div class="col-sm-6" id="intro-text">
+          <h1><strong>Karibu Groceries Limited</strong></h1>
+          <p class="grey-text">Your workspace awaits—log in to continue."
+            Track sales, manage inventory, and oversee operations all from your dashboard. Sign in to get started!</p>
+          <h5>Freshness Delivered to Your Doorstep!</h5>
         </div>
 
-        <div class="col-4">
+        <div class="col-sm-6">
           <form>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" class="form-control" id="exampleInputPassword1" required>
             </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              <label class="form-check-label" for="exampleCheck1">Remember me</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
           </form>
         </div>
-
-        
       </div> 
-
-      <div class="row">
-        <div class="col">
-          <h4><strong>Why Choose Karibu Groceries?</strong></h4>
-          <ul>
-            <li>Fresh & Organic – Handpicked produce and high-quality groceries.</li>
-            <li>Affordable Prices – The best deals on your everyday essentials.</li>
-            <li>Fast & Reliable Delivery – Get your groceries delivered on time.</li>
-            <li>Wide Selection – From farm-fresh veggies to household staples.</li>
-          </ul>
-
-          <h4><strong>Shop with Ease!</strong></h4>
-          <p>Browse our online store or visit our physical locations for a seamless shopping experience. Whether you're stocking up your kitchen or looking for last-minute ingredients, we've got you covered!</p>
-          <section>
-            <p>Visit Us: Nateete, Bijanjaalo Road</p>
-            <p> Call Us: +256756847972 / +256760211221</p>
-            <p>Order Online: </p>
-          </section>
-          
-        </div>
-      </div>
+      
       
     </div>
     

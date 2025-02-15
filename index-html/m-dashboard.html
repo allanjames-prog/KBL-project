@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manager Dashboard - Karibu Groceries LTD</title>
+    
+    <link rel="stylesheet" href="../css-styles/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css-styles/styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">KGL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produce.html">Produce Procurement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sales.html">Sales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dfd-payments.html">Deferred Payments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inventory.html">Inventory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="m-dashboard.html">Manager Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-page.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="log-in-page.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h1>Manager Dashboard</h1>
+      <p>Overview of procurements, sales, inventory status, and notifications for out-of-stock items.</p>
+      
+      <div class="row mb-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Total Procurements</h5>
+              <p class="card-text">15,000 kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-white bg-success mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Total Sales</h5>
+              <p class="card-text">10,000 kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-white bg-warning mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Low Stock Alerts</h5>
+              <p class="card-text">5</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-white bg-danger mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Out of Stock Items</h5>
+              <p class="card-text">3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Recent Procurements</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Produce Name</th>
+            <th scope="col">Type</th>
+            <th scope="col">Tonnage (kg)</th>
+            <th scope="col">Cost (UGX)</th>
+            <th scope="col">Dealer Name</th>
+            <th scope="col">Branch</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Beans</td>
+            <td>Grain</td>
+            <td>2,000</td>
+            <td>4,000,000</td>
+            <td>John Doe</td>
+            <td>Maganjo</td>
+            <td>2025-02-10</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Maize</td>
+            <td>Grain</td>
+            <td>3,000</td>
+            <td>6,000,000</td>
+            <td>Jane Smith</td>
+            <td>Matugga</td>
+            <td>2025-02-08</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Recent Sales</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Produce Name</th>
+            <th scope="col">Tonnage (kg)</th>
+            <th scope="col">Amount Paid (UGX)</th>
+            <th scope="col">Buyer's Name</th>
+            <th scope="col">Sales Agent</th>
+            <th scope="col">Branch</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Cow Peas</td>
+            <td>1,000</td>
+            <td>2,500,000</td>
+            <td>Alice Brown</td>
+            <td>Michael</td>
+            <td>Maganjo</td>
+            <td>2025-02-12</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Soybeans</td>
+            <td>500</td>
+            <td>1,250,000</td>
+            <td>Bob Johnson</td>
+            <td>Emily</td>
+            <td>Matugga</td>
+            <td>2025-02-11</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="../javascript/js/bootstrap.js"></script>
+  </body>
+</html>

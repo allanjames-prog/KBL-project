@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+#intro-text {
+  text-align: right;
+  font-size: small;
+}
+
+body {
+  position: relative;
+  margin-top: 10%;
+  background-color: #94e0bc;
+}
+
+section p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 0;
+}
+
+.grey-text {
+  color: gray;
+} 
+
+h1 {
+  font-family: roboto slab;
+  font-weight: 200;
+  color: rgb(34, 73, 34);
+}
+h5 {
+  font-family: Dancing script;
+  color: brown;  
+}
+
+.row {
+  background-color: rgba(231, 231, 231, 0.815);
+  border-radius: 10px;
+  padding: 5%;
+  box-shadow: 15px 15px 10px rgba(141, 141, 141, 0.226);
+}
+
+.form-control {
+  background: #e0e5ec;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 
+    4px 4px 8px rgba(110, 118, 131, 0.6), 
+    -4px -4px 8px rgb(255, 255, 255);
+    transition: all 0.3s ease
+}
+
+.form-control:focus, #submit-btn {
+  background: #e0e5ec;
+  box-shadow: 
+    4px 4px 8px rgba(110, 118, 131, 0.6), 
+    -4px -4px 8px rgb(255, 255, 255);
+  border-color: rgb(211, 211, 211);
+}
+
+.form-control:hover {
+  background: #dfdfdf;
+  box-shadow: 
+    4px 4px 8px rgba(110, 118, 131, 0.9), 
+    -4px -4px 8px rgb(255, 255, 255);
+ 
+}
+
+#submit-btn:hover {
+  background: rgba(42, 59, 59, 0.63);
+  box-shadow: 
+    4px 4px 8px rgba(110, 118, 131, 0.9), 
+    -4px -4px 8px rgb(255, 255, 255);
+}
+
+#submit-btn {
+  width: 50%;
+  background-color: rgb(151, 66, 66);
+  border-style: none; 
+}
+
+#exampleCheck1 {
+  appearance: none; 
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 2px solid rgba(112, 129, 129, 0.63);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+
+#exampleCheck1:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(21, 29, 29, 0.8);
+}
+
+#exampleCheck1:checked {
+  background-color: rgba(21, 29, 29, 0.63);
+}
