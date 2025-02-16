@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact - Karibu Groceries LTD</title>
+    <title>Director's Dashboard - Karibu Groceries LTD</title>
 
     <!-- Link for Dancing Script fontstyle -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="../css-styles/bootstrap-5.3.3-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../css-styles/contact-page-styles.css">
+    <link rel="stylesheet" href="../css-styles/dir-dashboard.css">
   </head>
   <body>
     
@@ -101,28 +101,119 @@
     
 
     <div class="container mt-5">
-      <h1>Contact Us</h1>
-      <p>If you have any questions or inquiries, feel free to reach out to us through the form below.</p>
+      <h1>Director's Dashboard</h1>
+      <p>Overview of procurements, sales, inventory status, and notifications for out-of-stock items.</p>
+      
+      <div class="row mb-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Total Procurements</h5>
+              <p class="card-text">15,000 kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-white bg-success mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Total Sales</h5>
+              <p class="card-text">10,000 kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-white bg-warning mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Low Stock Alerts</h5>
+              <p class="card-text">5</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-white bg-danger mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Out of Stock Items</h5>
+              <p class="card-text">3</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="subject" class="form-label">Subject</label>
-          <input type="text" class="form-control" id="subject" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      <h2>Recent Procurements</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Produce Name</th>
+            <th scope="col">Type</th>
+            <th scope="col">Tonnage (kg)</th>
+            <th scope="col">Cost (UGX)</th>
+            <th scope="col">Dealer Name</th>
+            <th scope="col">Branch</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Beans</td>
+            <td>Grain</td>
+            <td>2,000</td>
+            <td>4,000,000</td>
+            <td>John Doe</td>
+            <td>Maganjo</td>
+            <td>2025-02-10</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Maize</td>
+            <td>Grain</td>
+            <td>3,000</td>
+            <td>6,000,000</td>
+            <td>Jane Smith</td>
+            <td>Matugga</td>
+            <td>2025-02-08</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Recent Sales</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Produce Name</th>
+            <th scope="col">Tonnage (kg)</th>
+            <th scope="col">Amount Paid (UGX)</th>
+            <th scope="col">Buyer's Name</th>
+            <th scope="col">Sales Agent</th>
+            <th scope="col">Branch</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Cow Peas</td>
+            <td>1,000</td>
+            <td>2,500,000</td>
+            <td>Alice Brown</td>
+            <td>Michael</td>
+            <td>Maganjo</td>
+            <td>2025-02-12</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Soybeans</td>
+            <td>500</td>
+            <td>1,250,000</td>
+            <td>Bob Johnson</td>
+            <td>Emily</td>
+            <td>Matugga</td>
+            <td>2025-02-11</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <script src="../javascript/js/bootstrap.js"></script>
