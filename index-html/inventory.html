@@ -17,132 +17,236 @@
     
     <link rel="stylesheet" href="../css-styles/bootstrap-5.3.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css-styles/inventory-styles.css">
-  </head>
-  <body>
+  </head>  
+<body>
     
-    <!-- Navigation bar -->
-    <nav class="navbar fixed-top">
-      <div class="container-fluid">
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Navigation bar -->
+  <nav class="navbar fixed-top">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <a class="navbar-brand" href="../index-html/log-in-page.html">KGL</a>
+      <a class="navbar-brand" href="../index-html/log-in-page.html">KGL</a>
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 
-          <!-- Offcanvas header -->
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">KGL</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
+        <!-- Offcanvas header -->
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">KGL</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
 
-          <!-- Offcanvas body -->
-          <div class="offcanvas-body">
-            <ul class="navbar-nav ms-auto justify-content-end flex-grow-1 pe-3">
+        <!-- Offcanvas body -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto justify-content-end flex-grow-1 pe-3">
 
-              <!-- Home page -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-              </li>
+            <!-- Home page -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
 
-              <!-- Produce procurement page -->
-              <li class="nav-item">
-                <a class="nav-link" href="produce.html">Produce Procurement</a>
-              </li>
+            <!-- Produce procurement page -->
+            <li class="nav-item">
+              <a class="nav-link" href="produce.html">Produce Procurement</a>
+            </li>
 
-              <!-- Sales page -->
-              <li class="nav-item">
-                <a class="nav-link" href="sales.html">Sales</a>
-              </li>
+            <!-- Sales page -->
+            <li class="nav-item">
+              <a class="nav-link" href="sales.html">Sales</a>
+            </li>
 
-              <!-- Deferred Payments page -->
-              <li class="nav-item">
-                <a class="nav-link" href="dfd-payments.html">Deferred Payments</a>
-              </li>
-              <!-- Inventory Page -->
-              <li class="nav-item">
-                <a class="nav-link" href="inventory.html">Inventory</a>
-              </li>
+            <!-- Deferred Payments page -->
+            <li class="nav-item">
+              <a class="nav-link" href="dfd-payments.html">Deferred Payments</a>
+            </li>
+            <!-- Inventory Page -->
+            <li class="nav-item">
+              <a class="nav-link" href="inventory.html">Inventory</a>
+            </li>
 
-              <!-- Manager Dashboard page -->
-              <li class="nav-item">
-                <a class="nav-link" href="m-dashboard.html">Manager's Dashboard</a>
-              </li>
+            <!-- Manager Dashboard page -->
+            <li class="nav-item">
+              <a class="nav-link" href="m-dashboard.html">Manager's Dashboard</a>
+            </li>
 
-              <!-- Director Dashboard page -->
-              <li class="nav-item">
-                <a class="nav-link" href="dir-dashboard.html">Director Dashboard</a>
-              </li>
+            <!-- Director Dashboard page -->
+            <li class="nav-item">
+              <a class="nav-link" href="dir-dashboard.html">Director Dashboard</a>
+            </li>
 
-              <!-- Login/Authentication page -->
-              <li class="nav-item">
-                <a class="nav-link" href="log-in-page.html">Login</a>
-              </li>
+            <!-- Login/Authentication page -->
+            <li class="nav-item">
+              <a class="nav-link" href="log-in-page.html">Login</a>
+            </li>
 
-              <!-- Contact page -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contact-page.html">Contact</a>
-              </li>
-            </ul>
+            <!-- Contact page -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact-page.html">Contact</a>
+            </li>
+          </ul>
 
-            <!-- Search bar -->
-            <form class="d-flex mt-3 mb-5" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          <!-- Search bar -->
+          <form class="d-flex mt-3 mb-5" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
 
-          </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     
 
-    <div class="container mt-5">
-      <h1>Inventory</h1>
-      <p>Overview of current stock levels and notifications for out-of-stock items.</p>
+    <!-- Main Inventory Section -->
+  <div class="container mt-4">
+  <h2 class="mb-4">📦 Inventory Management</h2>
 
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Produce Name</th>
-            <th scope="col">Type</th>
-            <th scope="col">Tonnage (kg)</th>
-            <th scope="col">Branch</th>
-            <th scope="col">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Beans</td>
-            <td>Grain</td>
-            <td>1500</td>
-            <td>Maganjo</td>
-            <td><span class="badge bg-success">In Stock</span></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Maize</td>
-            <td>Grain</td>
-            <td>900</td>
-            <td>Matugga</td>
-            <td><span class="badge bg-warning">Low Stock</span></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Cow Peas</td>
-            <td>Legume</td>
-            <td>0</td>
-            <td>Maganjo</td>
-            <td><span class="badge bg-danger">Out of Stock</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+  <!-- Search & Add New Stock -->
+  <div class="d-flex justify-content-between mb-3">
+      <input type="text" class="form-control w-50" placeholder="🔍 Search inventory...">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addStockModal">+ Add New Stock</button>
+  </div>
+
+  <!-- Inventory Table -->
+      <div class="table-responsive">
+        <h3>Available stock</h3>
+          <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+              <tr>
+                  <th>Produce Name</th>
+                  <th>Type</th>
+                  <th>Available Stock (kg)</th>
+                  <th>Procurement Price (UGX/kg)</th>
+                  <th>Selling Price (UGX/kg)</th>
+                  <th>Branch</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr> <!-- Beans  -->
+                  <td>Beans</td>
+                  <td>Red Beans</td>
+                  <td>1200</td>
+                  <td>3000</td>
+                  <td>4500</td>
+                  <td>Maganjo</td>
+                  <td><span class="badge bg-success w-100">In Stock</span></td>
+                  <td>
+                      <button class="btn btn-warning btn-sm w-100 mb-2">Edit</button>
+                      <button class="btn btn-danger btn-sm w-100">Delete</button>
+                  </td>
+              </tr>
+
+              <tr> <!-- Maize  -->
+                  <td>Grain Maize</td>
+                  <td>White Maize</td>
+                  <td>200</td>
+                  <td>2500</td>
+                  <td>4000</td>
+                  <td>Matugga</td>
+                  <td><span class="badge bg-danger w-100">Low Stock</span></td>
+                  <td>
+                      <button class="btn btn-warning btn-sm w-100 mb-2">Edit</button>
+                      <button class="btn btn-danger btn-sm w-100">Delete</button>
+                  </td>
+              </tr>
+
+              <tr> <!-- Cow pease  -->
+                <td>Cow Peas</td>
+                <td>Brown Cow Peas</td>
+                <td>800</td>
+                <td>2800</td>
+                <td>4200</td>
+                <td>Kawempe</td>
+                <td><span class="badge bg-success w-100">In Stock</span></td>
+                <td>
+                    <button class="btn btn-warning btn-sm w-100 mb-2">Edit</button>
+                    <button class="btn btn-danger btn-sm w-100">Delete</button>
+                </td>
+              </tr>
+
+              <tr> <!-- Groundnuts  -->
+                  <td>Groundnuts</td>
+                  <td>Red Groundnuts</td>
+                  <td>500</td>
+                  <td>5000</td>
+                  <td>7500</td>
+                  <td>Gayaza</td>
+                  <td><span class="badge bg-warning text-dark w-100">Low Stock</span></td>
+                  <td>
+                      <button class="btn btn-warning btn-sm w-100 mb-2">Edit</button>
+                      <button class="btn btn-danger btn-sm w-100">Delete</button>
+                  </td>
+              </tr>
+
+              <tr> <!-- Soybeans  -->
+                  <td>Soybeans</td>
+                  <td>White Soybeans</td>
+                  <td>1500</td>
+                  <td>3200</td>
+                  <td>4800</td>
+                  <td>Nansana</td>
+                  <td><span class="badge bg-success w-100">In Stock</span></td>
+                  <td>
+                      <button class="btn btn-warning btn-sm w-100 mb-2">Edit</button>
+                      <button class="btn btn-danger btn-sm w-100">Delete</button>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+
+      <!-- Add New Stock Modal -->
+        <div class="modal fade" id="addStockModal" tabindex="-1" aria-labelledby="addStockModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="addStockModalLabel">Add New Stock</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                      <label class="form-label">Produce Name</label>
+                      <input type="text" class="form-control" required>
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Produce Type</label>
+                      <input type="text" class="form-control" required>
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Stock Quantity (kg)</label>
+                      <input type="number" class="form-control" min="1" required>
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Procurement Price (UGX/kg)</label>
+                      <input type="number" class="form-control" required>
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Selling Price (UGX/kg)</label>
+                      <input type="number" class="form-control" required>
+                  </div>
+                    <div class="mb-3">
+                      <label class="form-label">Branch</label>
+                        <select class="form-select" required>
+                          <option>Maganjo</option>
+                          <option>Matugga</option>
+                        </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Add Stock</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</div>
 
     <script src="../javascript/js/bootstrap.js"></script>
   </body>

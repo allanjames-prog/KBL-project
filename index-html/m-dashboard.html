@@ -20,201 +20,204 @@
   </head>
   <body>
     
-    <!-- Navigation bar -->
-    <nav class="navbar fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="../index-html/home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <a class="navbar-brand" href="../index-html/log-in-page.html">KGL</a>
-
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-
-          <!-- Offcanvas header -->
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">KGL</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-
-          <!-- Offcanvas body -->
-          <div class="offcanvas-body">
-            <ul class="navbar-nav ms-auto justify-content-end flex-grow-1 pe-3">
-
-              <!-- Home page -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-              </li>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           
 
               <!-- Produce procurement page -->
-              <li class="nav-item">
-                <a class="nav-link" href="produce.html">Produce Procurement</a>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="produce.html">Procurement</a>
               </li>
 
               <!-- Sales page -->
-              <li class="nav-item">
+              <li class="nav-item mx-2">
                 <a class="nav-link" href="sales.html">Sales</a>
               </li>
 
               <!-- Deferred Payments page -->
-              <li class="nav-item">
+              <li class="nav-item mx-2">
                 <a class="nav-link" href="dfd-payments.html">Deferred Payments</a>
               </li>
               <!-- Inventory Page -->
-              <li class="nav-item">
+              <li class="nav-item mx-2">
                 <a class="nav-link" href="inventory.html">Inventory</a>
               </li>
 
               <!-- Manager Dashboard page -->
-              <li class="nav-item">
+              <li class="nav-item mx-2">
                 <a class="nav-link" href="m-dashboard.html">Manager's Dashboard</a>
               </li>
 
               <!-- Director Dashboard page -->
-              <li class="nav-item">
+              <li class="nav-item mx-2">
                 <a class="nav-link" href="dir-dashboard.html">Director Dashboard</a>
               </li>
 
               <!-- Login/Authentication page -->
-              <li class="nav-item">
+              <li class="nav-item mx-2">
                 <a class="nav-link" href="log-in-page.html">Login</a>
               </li>
 
               <!-- Contact page -->
-              <li class="nav-item">
+              <li class="nav-item mx-2">
                 <a class="nav-link active" aria-current="page" href="contact-page.html">Contact</a>
               </li>
-            </ul>
-
-            <!-- Search bar -->
-            <form class="d-flex mt-3 mb-5" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-
-          </div>
+          </ul>
+          <span class="navbar-text">
+            KGL
+          </span>
         </div>
       </div>
     </nav>
 
+    <!-- Side bar -->
+    <div class="d-flex">
+      <nav class="bg-light text-dark p-3 vh-100" style="width: 250px;">
+          <h4 class="text-start">Manager Dashboard</h4>
+          <ul class="nav flex-column">
+              <li class="nav-item"><a href="m-dashboard.html" class="nav-link text-dark">Dashboard</a></li>
+              <li class="nav-item"><a href="inventory.html" class="nav-link text-dark">Inventory</a></li>
+              <li class="nav-item"><a href="sales-report.html" class="nav-link text-dark">Sales Report</a></li>
+          </ul>
+      </nav>
+
     
 
-    <div class="container mt-5">
-      <h1>Manager Dashboard</h1>
-      <p>Overview of procurements, sales, inventory status, and notifications for out-of-stock items.</p>
-      
-      <div class="row mb-4">
-        <div class="col-lg-3 col-md-6">
-          <div class="card text-white bg-primary mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Total Procurements</h5>
-              <p class="card-text">15,000 kg</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card text-white bg-success mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Total Sales</h5>
-              <p class="card-text">10,000 kg</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card text-white bg-warning mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Low Stock Alerts</h5>
-              <p class="card-text">5</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="card text-white bg-danger mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Out of Stock Items</h5>
-              <p class="card-text">3</p>
-            </div>
-          </div>
-        </div>
+     <!-- Main Content -->
+     <div class="container-fluid p-4">
+      <!-- Top Navigation -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2>Welcome, Manager</h2>
+          <button class="btn btn-primary">Logout</button>
       </div>
 
-      <h2>Recent Procurements</h2>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Produce Name</th>
-            <th scope="col">Type</th>
-            <th scope="col">Tonnage (kg)</th>
-            <th scope="col">Cost (UGX)</th>
-            <th scope="col">Dealer Name</th>
-            <th scope="col">Branch</th>
-            <th scope="col">Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Beans</td>
-            <td>Grain</td>
-            <td>2,000</td>
-            <td>4,000,000</td>
-            <td>John Doe</td>
-            <td>Maganjo</td>
-            <td>2025-02-10</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Maize</td>
-            <td>Grain</td>
-            <td>3,000</td>
-            <td>6,000,000</td>
-            <td>Jane Smith</td>
-            <td>Matugga</td>
-            <td>2025-02-08</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- Summary Cards -->
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card text-white bg-success mb-3">
+                  <div class="card-body">
+                      <h5 class="card-title">Total Stock</h5>
+                      <p class="card-text">12,500 kg</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card text-white bg-warning mb-3">
+                  <div class="card-body">
+                      <h5 class="card-title">Low Stock Items</h5>
+                      <p class="card-text">3 Products</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card text-white bg-danger mb-3">
+                  <div class="card-body">
+                      <h5 class="card-title">Out of Stock</h5>
+                      <p class="card-text">1 Product</p>
+                  </div>
+              </div>
+          </div>
+      </div>
 
-      <h2>Recent Sales</h2>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Produce Name</th>
-            <th scope="col">Tonnage (kg)</th>
-            <th scope="col">Amount Paid (UGX)</th>
-            <th scope="col">Buyer's Name</th>
-            <th scope="col">Sales Agent</th>
-            <th scope="col">Branch</th>
-            <th scope="col">Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Cow Peas</td>
-            <td>1,000</td>
-            <td>2,500,000</td>
-            <td>Alice Brown</td>
-            <td>Michael</td>
-            <td>Maganjo</td>
-            <td>2025-02-12</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Soybeans</td>
-            <td>500</td>
-            <td>1,250,000</td>
-            <td>Bob Johnson</td>
-            <td>Emily</td>
-            <td>Matugga</td>
-            <td>2025-02-11</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <!-- Inventory Table -->
+      <div class="card">
+          <div class="card-header">
+              <h5>Current Inventory</h5>
+          </div>
+          <div class="card-body">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>Produce</th>
+                          <th>Type</th>
+                          <th>Stock (kg)</th>
+                          <th>Purchase Price (UGX)</th>
+                          <th>Sale Price (UGX)</th>
+                          <th>Branch</th>
+                          <th>Status</th>
+                          <th>Actions</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Beans</td>
+                          <td>Red Beans</td>
+                          <td>1200</td>
+                          <td>3000</td>
+                          <td>4500</td>
+                          <td>Maganjo</td>
+                          <td><span class="badge bg-success">In Stock</span></td>
+                          <td>
+                              <button class="btn btn-warning btn-sm">Edit</button>
+                              <button class="btn btn-danger btn-sm">Delete</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Maize</td>
+                          <td>White Maize</td>
+                          <td>200</td>
+                          <td>2500</td>
+                          <td>4000</td>
+                          <td>Matugga</td>
+                          <td><span class="badge bg-danger">Low Stock</span></td>
+                          <td>
+                              <button class="btn btn-warning btn-sm">Edit</button>
+                              <button class="btn btn-danger btn-sm">Delete</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Cow Peas</td>
+                          <td>Brown Cow Peas</td>
+                          <td>800</td>
+                          <td>2800</td>
+                          <td>4200</td>
+                          <td>Kawempe</td>
+                          <td><span class="badge bg-success">In Stock</span></td>
+                          <td>
+                              <button class="btn btn-warning btn-sm">Edit</button>
+                              <button class="btn btn-danger btn-sm">Delete</button>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      <!-- Charts Section -->
+      <div class="row mt-4">
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-header">
+                      <h5>Stock Distribution</h5>
+                  </div>
+                  <div class="card-body">
+                      <!-- Pie Chart Placeholder -->
+                      <canvas id="pieChart"></canvas>
+                      <!-- You will add your Pie Chart script here -->
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-header">
+                      <h5>Sales Breakdown</h5>
+                  </div>
+                  <div class="card-body">
+                      <!-- Donut Chart Placeholder -->
+                      <canvas id="donutChart"></canvas>
+                      <!-- You will add your Donut Chart script here -->
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
 
     <script src="../javascript/js/bootstrap.js"></script>
   </body>

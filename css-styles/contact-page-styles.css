@@ -1,7 +1,7 @@
-
 body {
   position: relative;
-  margin-top: 50px;
+  margin-top: 7%;
+  background-color: #94e0bc;
 }
 
 body::after {
@@ -15,18 +15,15 @@ body::after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.2; /* Adjust transparency */
+  opacity: 0.2; 
   z-index: -1;
 }
 
 
+
 /* Nav bar styles */
 
-.nav-link {
-  margin-bottom: 12px;
-  font-family: Roboto Slab;
-  font-weight: bolder;
-  color: black;
+.form-control, .nav-item {
   background: #e0e5ec;
   border-radius: 8px;
   padding: 10px;
@@ -36,7 +33,15 @@ body::after {
   transition: all 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-item {
+  margin-bottom: 12px;
+  font-family: Roboto Slab;
+  font-weight: bolder;
+  color: black;
+}
+
+
+.nav-item:hover {
   background: #dfdfdf;
   box-shadow: 
     4px 4px 8px rgba(110, 118, 131, 0.9), 
@@ -75,6 +80,7 @@ body::after {
 
 .offcanvas {
   background-color: rgb(255, 255, 255);
+  width: 400px;
 }
 
 .offcanvas-body {
@@ -85,9 +91,7 @@ body::after {
   padding-right: 2px;
 }
 
-#offcanvasNavbar {
-  width: 240px;
-}
+
 
 #home-link {
   font-weight: bold;
@@ -130,3 +134,53 @@ body::after {
   border-radius: 5px;
 }
 
+.c-item img {
+  height: 80vh; 
+  object-fit: cover; 
+  filter: brightness(80%); 
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6); 
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem; 
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem; 
+}
+
+#submit-btn {
+  width: 20%;
+  background-color: rgb(151, 66, 66);
+  border-style: none; 
+  box-shadow: 
+    4px 4px 8px rgba(110, 118, 131, 0.6), 
+    -4px -4px 8px #e8fff4;
+  transition: all 0.2s ease;
+}
+
+#submit-btn:hover {
+  background: rgba(42, 59, 59, 0.63);
+  box-shadow: 
+    4px 4px 8px rgba(110, 118, 131, 0.9), 
+    -4px -4px 8px rgb(255, 255, 255);
+}
+
+.form-container {
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-family: Roboto Slab;
+}
+
+h5 {
+  font-family: Dancing Script;
+  color: brown;  
+}

@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin-top: 0;
+}
+
+#account-pics {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
