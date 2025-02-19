@@ -1,13 +1,89 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  position: relative;
-  margin-top: 0;
+html, body {
+  overflow-x: hidden;
 }
 
 #account-pics {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  min-height: 100vh; /* Ensures it covers at least the full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* General Container Styling */
+.container {
+  background-color: #f8f9fa; 
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h3 {
+  color: #343a40;
+}
+
+/* Card Styling */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Card Body */
+.card-body {
+  background: #ffffff;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+/* Card Title */
+.card-title {
+  font-weight: bold;
+  color: #212529;
+}
+
+/* Card Text */
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Password Input */
+.form-control {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+/* Login Button */
+.btn-dark {
+  width: 150px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-dark:hover {
+  background-color: #212529;
+  transform: scale(1.05);
+}
+
+
+
+
+/* Responsive Grid Adjustments */
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column;
+  }
 }
