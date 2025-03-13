@@ -173,45 +173,49 @@
     <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center d-flex align-items-stretch" id="hero">
 
       <div class="col-md-4 d-flex">
-        <div class="card flex-fill card-color">
+        <div class="card flex-fill shadow-lg border-0 card-color">
           <div class="card-body">
-            <h5 class="card-title">Director</h5>
-            <h6>Access Rights:</h6>
-            <ul>
-              <li>Can view total sales and aggregated reports from all branches.</li>
-              <li>Can see the overall business performance but cannot edit or add records.</li>
-              <li>Cannot view individual sales records, only aggregated figures.</li>
+            <h5 class="card-title text-primary fw-bold"><i class="fas fa-user-tie"></i> Director</h5>
+            <hr>
+            <h6 class="text-success fw-semibold"><i class="fas fa-check-circle"></i> Access Rights:</h6>
+            <ul class="list-unstyled ps-3">
+              <li><i class="fas fa-chart-line text-success"></i> View total sales and aggregated reports from all branches.</li>
+              <li><i class="fas fa-eye text-success"></i> Monitor overall business performance without editing privileges.</li>
+              <li><i class="fas fa-ban text-warning"></i> Cannot view individual sales records, only aggregated figures.</li>
             </ul>
-            <h6>Restrictions:</h6>
-            <ul>
-              <li>Cannot record sales or procurements.</li>
-              <li>Cannot modify product prices or inventory.</li>
+            <h6 class="text-danger fw-semibold"><i class="fas fa-lock"></i> Restrictions:</h6>
+            <ul class="list-unstyled ps-3">
+              <li><i class="fas fa-times-circle text-danger"></i> Cannot record sales or procurements.</li>
+              <li><i class="fas fa-times-circle text-danger"></i> Cannot modify product prices or inventory.</li>
             </ul>
           </div>
         </div>
       </div>
-    
-      <div class="col-6-md-4 d-flex">
-        <div class="card flex-fill card-color">
+      
+      <div class="col-md-4 d-flex">
+        <div class="card flex-fill shadow-lg border-0 card-color">
           <div class="card-body">
-            <h5 class="card-title">Manager – Oversees Branch Operations</h5>
-            <h6>Access Rights:</h6>
-            <ul>
-              <li>Can record produce procurement (new stock entries).</li>
-              <li>Can set product prices for items.</li>
-              <li>Can make sales at the branch level.</li>
-              <li>Can view stock levels and get notifications when items are out of stock.</li>
-              <li>Can see all transactions made within their branch.</li>
+            <h5 class="card-title text-primary fw-bold"><i class="fas fa-user-cog"></i> Manager – Oversees Branch Operations</h5>
+            <hr>
+            <h6 class="text-success fw-semibold"><i class="fas fa-check-circle"></i> Access Rights:</h6>
+            <ul class="list-unstyled ps-3">
+              <li><i class="fas fa-box-open text-success"></i> Can record produce procurement (new stock entries).</li>
+              <li><i class="fas fa-tags text-success"></i> Can set product prices for items.</li>
+              <li><i class="fas fa-cash-register text-success"></i> Can make sales at the branch level.</li>
+              <li><i class="fas fa-warehouse text-success"></i> Can view stock levels and receive out-of-stock alerts.</li>
+              <li><i class="fas fa-receipt text-success"></i> Can see all transactions made within their branch.</li>
             </ul>
-            <h6>Restrictions:</h6>
-            <ul>
-              <li>Cannot modify sales made by other agents.</li>
-              <li>Cannot access sales data from other branches.</li>
-              <li>Cannot view the overall business financials (only the director can).</li>
+            <h6 class="text-danger fw-semibold"><i class="fas fa-lock"></i> Restrictions:</h6>
+            <ul class="list-unstyled ps-3">
+              <li><i class="fas fa-times-circle text-danger"></i> Cannot modify sales made by other agents.</li>
+              <li><i class="fas fa-times-circle text-danger"></i> Cannot access sales data from other branches.</li>
+              <li><i class="fas fa-times-circle text-danger"></i> Cannot view overall business financials (only the director can).</li>
             </ul>
           </div>
         </div>
       </div>
+      
+      
 
       <div class="col-6-md-4 d-flex">
         <div class="card flex-fill card-color">

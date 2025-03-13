@@ -19,157 +19,239 @@
     <link rel="stylesheet" href="../css-styles/m-dashboard-styles.css">
   </head>
   <body>
-    
-    <div class="mt-6">
-        <div class="col-auto mb-4">
-            <a href="../index.html" class="btn btn-primary">
-              <i class="bi bi-arrow-left"></i> Back
-            </a>
-        </div>
-        
-    <!-- Side bar -->
-    <div class="d-flex">
-        <nav class="bg-light text-dark p-3 vh-100" style="width: 250px;">
-            <h4 class="text-start">Manager Dashboard</h4>
-            <ul class="nav flex-column">
-                <li class="nav-item"><a href="m-dashboard.html" class="nav-link text-dark">Dashboard</a></li>
-                <li class="nav-item"><a href="inventory.html" class="nav-link text-dark">Inventory</a></li>
-                <li class="nav-item"><a href="sales-report.html" class="nav-link text-dark">Sales Report</a></li>
-            </ul>
-        </nav>
-  
       
-  
+    
+
+    <div class="d-flex">
+        
+        <!-- Offcanvas (Hidden on small screens, visible on medium and larger) -->
+        <div class="offcanvas offcanvas-start d-none d-md-block" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    I will not close if you click outside of me.
+                </div>
+            </div>
+        </div>
+
+<!-- Hamburger Icon (Visible only on small screens) -->
+<button class="d-md-none btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+    <img src="your-hamburger-icon.png" alt="Menu" width="40" height="40">
+</button>
+
+
        <!-- Main Content -->
        <div class="container-fluid p-4">
-        <!-- Top Navigation -->
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2>Welcome, Manager</h2>
-            <button class="btn btn-primary">Logout</button>
-        </div>
+            <!-- Top Navigation -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Welcome, Manager</h2>
+            </div>
+    
+            <!-- Summary Cards -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-white bg-success mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Stock</h5>
+                            <p class="card-text">12,500 kg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Low Stock Items</h5>
+                            <p class="card-text">3 Products</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-danger mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Out of Stock</h5>
+                            <p class="card-text">1 Product</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
   
-        <!-- Summary Cards -->
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card text-white bg-success mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Total Stock</h5>
-                        <p class="card-text">12,500 kg</p>
+            <div class="container mt-4">
+                <div class="row">
+                    <!-- Inventory Table -->
+                    <div class="col-md-6">
+                        
+                            <div class="card-header">
+                                <h5>Current Inventory</h5>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Produce</th>
+                                            <th>Stock (kg)</th>
+                                            <th>Price (UGX)</th>
+                                            <th>Sale Price (UGX)</th>
+                                            <th>Branch</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Beans</td>
+                                            <td>1200</td>
+                                            <td>3000</td>
+                                            <td>4500</td>
+                                            <td>Maganjo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maize</td>
+                                            <td>200</td>
+                                            <td>2500</td>
+                                            <td>4000</td>
+                                            <td>Matugga</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Peas</td>
+                                            <td>800</td>
+                                            <td>2800</td>
+                                            <td>4200</td>
+                                            <td>Kawempe</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Peas</td>
+                                            <td>800</td>
+                                            <td>2800</td>
+                                            <td>4200</td>
+                                            <td>Kawempe</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Peas</td>
+                                            <td>800</td>
+                                            <td>2800</td>
+                                            <td>4200</td>
+                                            <td>Kawempe</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        
+                    </div>
+
+                    <!-- Sales Report Table -->
+                    <div class="col-md-6">
+                        
+                            <div class="card-header">
+                                <h5>Sales Report</h5>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Produce</th>
+                                            <th>Sold (kg)</th>
+                                            <th>Revenue (UGX)</th>
+                                            <th>Branch</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Beans</td>
+                                            <td>400</td>
+                                            <td>1,800,000</td>
+                                            <td>Maganjo</td>
+                                            <td>12/03/2025</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maize</td>
+                                            <td>150</td>
+                                            <td>600,000</td>
+                                            <td>Matugga</td>
+                                            <td>12/03/2025</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cow Peas</td>
+                                            <td>300</td>
+                                            <td>1,260,000</td>
+                                            <td>Kawempe</td>
+                                            <td>12/03/2025</td>
+                                        </tr>
+                                        <tr>
+                                            <td>G-nuts</td>
+                                            <td>300</td>
+                                            <td>1,260,000</td>
+                                            <td>Kawempe</td>
+                                            <td>12/03/2025</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Soybeans</td>
+                                            <td>300</td>
+                                            <td>1,260,000</td>
+                                            <td>Kawempe</td>
+                                            <td>12/03/2025</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card text-white bg-warning mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Low Stock Items</h5>
-                        <p class="card-text">3 Products</p>
+
+  
+            <!-- Charts Section -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Stock Distribution</h5>
+                        </div>
+                        <div class="card-body">
+                            <!-- Pie Chart Placeholder -->
+                            <canvas id="pieChart"></canvas>
+                            <!-- You will add your Pie Chart script here -->
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-white bg-danger mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Out of Stock</h5>
-                        <p class="card-text">1 Product</p>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Sales Breakdown</h5>
+                        </div>
+                        <div class="card-body">
+                            <!-- Donut Chart Placeholder -->
+                            <canvas id="donutChart"></canvas>
+                            <!-- You will add your Donut Chart script here -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-  
-        <!-- Inventory Table -->
-        <div class="card">
-            <div class="card-header">
-                <h5>Current Inventory</h5>
-            </div>
-            <div class="card-body">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Produce</th>
-                            <th>Type</th>
-                            <th>Stock (kg)</th>
-                            <th>Purchase Price (UGX)</th>
-                            <th>Sale Price (UGX)</th>
-                            <th>Branch</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Beans</td>
-                            <td>Red Beans</td>
-                            <td>1200</td>
-                            <td>3000</td>
-                            <td>4500</td>
-                            <td>Maganjo</td>
-                            <td><span class="badge bg-success">In Stock</span></td>
-                            <td>
-                                <button class="btn btn-warning btn-sm">Edit</button>
-                                <button class="btn btn-danger btn-sm">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Maize</td>
-                            <td>White Maize</td>
-                            <td>200</td>
-                            <td>2500</td>
-                            <td>4000</td>
-                            <td>Matugga</td>
-                            <td><span class="badge bg-danger">Low Stock</span></td>
-                            <td>
-                                <button class="btn btn-warning btn-sm">Edit</button>
-                                <button class="btn btn-danger btn-sm">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Cow Peas</td>
-                            <td>Brown Cow Peas</td>
-                            <td>800</td>
-                            <td>2800</td>
-                            <td>4200</td>
-                            <td>Kawempe</td>
-                            <td><span class="badge bg-success">In Stock</span></td>
-                            <td>
-                                <button class="btn btn-warning btn-sm">Edit</button>
-                                <button class="btn btn-danger btn-sm">Delete</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-  
-        <!-- Charts Section -->
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Stock Distribution</h5>
-                    </div>
-                    <div class="card-body">
-                        <!-- Pie Chart Placeholder -->
-                        <canvas id="pieChart"></canvas>
-                        <!-- You will add your Pie Chart script here -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Sales Breakdown</h5>
-                    </div>
-                    <div class="card-body">
-                        <!-- Donut Chart Placeholder -->
-                        <canvas id="donutChart"></canvas>
-                        <!-- You will add your Donut Chart script here -->
-                    </div>
-                </div>
-            </div>
-        </div>
-  
     </div>
-    </div>
+
+
+
+
+    <!-- 
+    <div class="container"> 
+        <div class="row"> 
+            <div class="col-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi repellat assumenda veniam, vero eligendi sed ducimus dignissimos illum ex! Odio ullam laboriosam culpa possimus laborum rem odit nulla ut molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, reprehenderit esse. Temporibus in qui quis minima at nihil commodi tempore. Eligendi quibusdam iusto, animi dolorem incidunt impedit nihil. Quia, nesciunt ducimus! Non consequuntur praesentium odio perferendis dolorem nostrum veniam? Incidunt voluptatibus obcaecati odit sed soluta minus enim quas repudiandae, et inventore perspiciatis expedita exercitationem facilis distinctio voluptas pariatur ad. Deleniti sit vel a, fugiat iure vitae ab, corrupti pariatur, incidunt facilis vero saepe optio corporis obcaecati possimus nemo facere laboriosam placeat unde distinctio exercitationem recusandae. Dolor facere quaerat nisi sed facilis animi optio repellendus non, laborum cum suscipit quos modi temporibus quae sapiente at rerum voluptate voluptas 
+            </div>
+
+            <div class="col-10">
+                <div class="row">
+                    <div class="col">Right column</div> 
+                    <div class="col">Right column</div> 
+                    <div class="col">Right column</div> 
+                    <div class="col">Right column</div> 
+                </div> 
+            </div>
+            
+        </div> 
+    </div> -->
 
 
     <script src="../javascript/js/bootstrap.js"></script>

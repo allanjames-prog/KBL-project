@@ -3,7 +3,7 @@ body {
   position: relative;
   background-color: #94e0bc;
 }
-
+/* 
 body::after {
   content: "";
   position: fixed;
@@ -15,11 +15,11 @@ body::after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.2; /* Adjust transparency */
+  opacity: 0.2; 
   z-index: -1;
-}
+} */
 
-.navbar-text {
+/* .navbar-text {
   font-weight: 500;
   font-size: 20px;
   color: rgb(0, 0, 0);
@@ -27,4 +27,28 @@ body::after {
 
 .nav-item .nav-link, .navbar-brand {
   font-weight: 500;
+} */
+
+
+@media (max-width: 767px) {
+  .offcanvas {
+      display: none !important; /* Hide the offcanvas menu */
+  }
+
+  .btn-success {
+      display: block !important; /* Show the button */
+  }
+}
+
+@media (min-width: 768px) {
+  .offcanvas {
+      display: block !important; /* Always show the offcanvas menu */
+      position: relative !important; /* Ensure it's placed normally */
+      transform: none !important; /* Prevent Bootstrap's offcanvas effect */
+      visibility: visible !important; 
+  }
+
+  .btn-success {
+      display: none !important; /* Hide the button on large screens */
+  }
 }
